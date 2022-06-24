@@ -456,6 +456,7 @@
         </div>
       </div>
     </footer>
+
     <div class="backdrop " data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -465,14 +466,16 @@
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
-          <input type="text" class="modal-input" >
-          <input type="text" class="modal-input" >
-          <input type="text" class="modal-input">
-          <input type="text" class="modal-input-coment" >
+          <input type="text" class="modal-input" placeholder="Имя" required>
+          <input type="tel" class="modal-input" placeholder="Телефон" required >
+          <input type="email" class="modal-input" placeholder="Почта" required>
+          <textarea name="modal-text" id="modal-text" class="modal-text" placeholder="Введите текст"></textarea>
+          <button type="submit" class="main-btn">Отправить</button>
         </form>
 
       </div>
     </div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
