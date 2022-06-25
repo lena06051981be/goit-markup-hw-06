@@ -466,10 +466,18 @@
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
-          <input type="text" name="user-text" class="modal-input" placeholder="Имя" required>
-          <input type="tel" name="user-tel" class="modal-input" placeholder="Телефон" required >
-          <input type="email" name="user-email" class="modal-input" placeholder="Почта" required>
-          <textarea name="modal-text" id="modal-text" class="modal-text" placeholder="Введите текст"></textarea>
+          <label class="modal-label" >
+            Имя
+          <input type="text" name="user-neme" class="modal-input" placeholder="Имя" required></label>
+          <label class="modal-label">
+            Телефон
+          <input type="tel" name="user-tel" class="modal-input" placeholder="Телефон" required ></label>
+          <label class="modal-label">
+            Почта
+          <input type="email" name="user-email" class="modal-input" placeholder="Почта" required></label>
+          <label class="modal-label">
+            Комментарий
+          <textarea name="modal-text" id="modal-text" class="modal-text" placeholder="Введите текст"></textarea></label>
           <button type="submit" class="main-btn">Отправить</button>
         </form>
 
