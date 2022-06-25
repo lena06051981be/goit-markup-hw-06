@@ -643,16 +643,16 @@ h1[class="visually-hidden"] {
 }
 
 /* ///// подсветка строк при заполнении ///// */
-
+.modal-input:placeholder-shown {
+  background-color: transparent;
+}
 .modal-input:not(:placeholder-shown):not(:focus):valid {
   background-color: rgba(108, 255, 186, 0.493);
 }
 .modal-input:not(:placeholder-shown):not(:focus):invalid {
   background-color: rgba(255, 91, 91, 0.856);
 }
-.modal-input:placeholder-shown {
-  background-color: transparent;
-}
+
 
 .modal-svg {
   position: absolute;
@@ -681,12 +681,15 @@ h1[class="visually-hidden"] {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--description-text-color);
+  display: flex;
+  align-items: center;  
   margin-bottom: 30px;
 }
 .check-label::before {
-  content: url(../images/envelope.svg);
+  content: '';
   width: 15px;
   height: 16px;
+  border-radius: 4px;
   display: block;
   border: 1px solid black;
 }
