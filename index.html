@@ -28,7 +28,7 @@
       a {
         text-decoration: none; /* Убираем подчеркивание в ссылках  */
       }
-    </style>    
+    </style>
   </head>
   <body>
     <!-- header -->
@@ -40,7 +40,9 @@
           </a>
           <ul class="header-list">
             <li class="header-item">
-              <a href="./index.html" class="header-item-link header-text + stream"
+              <a
+                href="./index.html"
+                class="header-item-link header-text + stream"
                 >Студия</a
               >
             </li>
@@ -90,7 +92,9 @@
           <h1 class="main" title="Эффективные решения для вашего бизнеса">
             Эффективные решения для вашего бизнеса
           </h1>
-          <button  class="main-btn" type="button" data-modal-open>Заказать услугу</button>
+          <button class="main-btn" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -398,7 +402,12 @@
           <address>
             <ul class="contacts">
               <li class="footer-item">
-                <a href="https://goo.gl/maps/AGHYp6htn4ZRzc9z8" target="_blank" rel="noopener noreferrer" title="address" class="contact"
+                <a
+                  href="https://goo.gl/maps/AGHYp6htn4ZRzc9z8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="address"
+                  class="contact"
                   >г.Киев,пр-т Леси Украинки,26</a
                 >
               </li>
@@ -457,7 +466,7 @@
       </div>
     </footer>
 
-    <div class="backdrop " data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-icon" width="11" height="11">
@@ -466,21 +475,48 @@
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
-          <label class="modal-label" >
-            Имя
-          <input type="text" name="user-neme" class="modal-input" placeholder="Имя" required></label>
-          <label class="modal-label">
-            Телефон
-          <input type="tel" name="user-tel" class="modal-input" placeholder="Телефон" required ></label>
-          <label class="modal-label">
-            Почта
-          <input type="email" name="user-email" class="modal-input" placeholder="Почта" required></label>
-          <label class="modal-label">
-            Комментарий
-          <textarea name="modal-text" id="modal-text" class="modal-text" placeholder="Введите текст"></textarea></label>
+          <label class="modal-label"> <span class="modal-span">Имя</span>
+            
+            <input
+              type="text"
+              name="user-neme"
+              class="modal-input"
+              placeholder="Имя"
+              required
+          />
+        </label>
+        <svg class="modal-form-icon">
+          <use href="./images/icons.svg#icon-user" width="18" height="18"></use>
+        </svg>
+          <label class="modal-label"><span class="modal-span">Телефон</span>
+            
+            <input
+              type="tel"
+              name="user-tel"
+              class="modal-input"
+              placeholder="Телефон"
+              required
+          /></label>
+          <label class="modal-label"><span class="modal-span">Почта</span>
+            
+            <input
+              type="email"
+              name="user-email"
+              class="modal-input"
+              placeholder="Почта"
+              required
+          /></label>
+          <label class="modal-label"><span class="modal-span">Комментарий</span>
+            
+            <textarea
+              name="modal-text"
+              id="modal-text"
+              class="modal-text"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
           <button type="submit" class="main-btn">Отправить</button>
         </form>
-
       </div>
     </div>
 
